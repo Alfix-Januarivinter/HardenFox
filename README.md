@@ -1,5 +1,6 @@
 # HardenFox
 This user.js makes changes to the about:config file in Firefox to enhance the browser, so called hardening Firefox.
+
 This is about 31% faster than standard Firefox!
 
 ## How to Hardend Firefox with user.js
