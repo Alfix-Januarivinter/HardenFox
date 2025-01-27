@@ -12,7 +12,7 @@
  * Creator: "Alfix_Januarivinter"                                                        *
  * version: 133                                                             *
  * url: https://github.com/Alfix-Januarivinter/HardenFox
- * (this is an fork of Betterfox https://github.com/yokoffing/Betterfox)                           *
+ * (this is an customized version of Betterfox https://github.com/yokoffing/Betterfox)                           *
 ****************************************************************************/
 
 /****************************************************************************
