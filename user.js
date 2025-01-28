@@ -319,6 +319,19 @@ user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("media.eme.enabled", false);
 
 
+// PREF: restore Top Sites on New Tab page
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", true);
+
+// PREF: remove default Top Sites (Facebook, Twitter, etc.)
+// This does not block you from adding your own.
+user_pref("browser.newtabpage.activity-stream.default.sites", "");
+
+// PREF: remove sponsored content on New Tab page
+user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false); // Sponsored shortcuts 
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false); // Recommended by Pocket
+user_pref("browser.newtabpage.activity-stream.showSponsored", false); // Sponsored Stories
+
+
 /****************************************************************************
  * START: MY OVERRIDES                                                      *
 ****************************************************************************/
