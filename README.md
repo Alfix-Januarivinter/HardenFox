@@ -17,4 +17,6 @@ This is about 31% faster than standard Firefox!
 
 ## Check out Betterfox
 
+This user.js file is an customized version of Betterfox!
+
 Url: https://github.com/yokoffing/Betterfox
