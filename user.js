@@ -16,96 +16,6 @@
 ****************************************************************************/
 
 /****************************************************************************
- * START: MY OVERRIDES                                                      *
-****************************************************************************/
-// Find your Overrides online and customize your firefox (Some overrides will cause the browser or websites from functioning properly!)
-// Enter your personal overrides below this line:
-
-
-/****************************************************************************
- * SECTION: Optional setting (Remove or change if you dont want to have)                                                  *
-****************************************************************************/
-
-// PREF: improve font rendering by using DirectWrite everywhere like Chrome [WINDOWS]
-user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
-user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
-user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "");
-user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
-
-
-// PREF: login manager
-user_pref("signon.rememberSignons", true);
-
-// PREF: pop-up to save logins for a new site
-user_pref("signon.formlessCapture.enabled", true);
-
-// PREF: restore address and credit card manager
-user_pref("extensions.formautofill.addresses.enabled", true);
-user_pref("extensions.formautofill.creditCards.enabled", true);
-
-
-// PREF: search engine suggestions
-user_pref("browser.search.suggest.enabled", true);
-
-
-// PREF: enable container tabs
-user_pref("privacy.userContext.enabled", true);
-
-
-// PREF: enforce ETP Strict
-user_pref("browser.contentblocking.category", "strict");
-
-
-// PREF: do not allow embedded tweets, Instagram, Reddit, and Tiktok posts
-user_pref("urlclassifier.trackingSkipURLs", "");
-user_pref("urlclassifier.features.socialtracking.skipURLs", "");
-
-
-// PREF: enable HTTPS-Only Mode
-// Warn me before loading sites that don't support HTTPS
-// in both Normal and Private Browsing windows.
-user_pref("dom.security.https_only_mode", true);
-user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
-
-
-// PREF: set DoH provider
-user_pref("network.trr.uri", "https://dns.dnswarden.com/00000000000000000000048"); // Hagezi Light + TIF
-
-
-// PREF: enforce DNS-over-HTTPS (DoH)
-user_pref("network.trr.mode", 3);
-
-
-// PREF: disable disk cache
-user_pref("browser.cache.disk.enable", false);
-
-
-// PREF: display the installation prompt for all extensions
-user_pref("extensions.postDownloadThirdPartyPrompt", false);
-
-
-// PREF: enforce certificate pinning
-// [ERROR] MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE
-// 1 = allow user MiTM (such as your antivirus) (default)
-// 2 = strict
-user_pref("security.cert_pinning.enforcement_level", 2);
-
-
-// PREF: delete all browsing data on shutdown except cookies
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
-user_pref("privacy.clearOnShutdown_v2.cache", true); // DEFAULT (clears cache)
-user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true); // DEFAULT (clears history and download history)
-
-// PREF: after crashes or restarts, do not save extra session data
-// such as form content, scrollbar positions, and POST data
-user_pref("browser.sessionstore.privacy_level", 2);
-
-
-// PREF: disable all DRM content (But can cause most popular streaming platforms from not functioning properly)
-user_pref("media.eme.enabled", false);
-
-
-/****************************************************************************
  * SECTION: Speed/Performance                                                    *
 ****************************************************************************/
 /** GENERAL ***/
@@ -324,6 +234,97 @@ user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 250);
 user_pref("general.smoothScroll.currentVelocityWeighting", "1");
 user_pref("general.smoothScroll.stopDecelerationWeighting", "1");
 user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this number to your liking
+
+
+/****************************************************************************
+ * SECTION: Optional setting (Remove or change if you dont want to have)                                                  *
+****************************************************************************/
+
+// PREF: improve font rendering by using DirectWrite everywhere like Chrome [WINDOWS]
+user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
+user_pref("gfx.font_rendering.cleartype_params.cleartype_level", 100);
+user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "");
+user_pref("gfx.font_rendering.directwrite.use_gdi_table_loading", false);
+
+
+// PREF: login manager
+user_pref("signon.rememberSignons", true);
+
+// PREF: pop-up to save logins for a new site
+user_pref("signon.formlessCapture.enabled", true);
+
+// PREF: restore address and credit card manager
+user_pref("extensions.formautofill.addresses.enabled", true);
+user_pref("extensions.formautofill.creditCards.enabled", true);
+
+
+// PREF: search engine suggestions
+user_pref("browser.search.suggest.enabled", true);
+
+
+// PREF: enable container tabs
+user_pref("privacy.userContext.enabled", true);
+
+
+// PREF: enforce ETP Strict
+user_pref("browser.contentblocking.category", "strict");
+
+
+// PREF: do not allow embedded tweets, Instagram, Reddit, and Tiktok posts
+user_pref("urlclassifier.trackingSkipURLs", "");
+user_pref("urlclassifier.features.socialtracking.skipURLs", "");
+
+
+// PREF: enable HTTPS-Only Mode
+// Warn me before loading sites that don't support HTTPS
+// in both Normal and Private Browsing windows.
+user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode_error_page_user_suggestions", true);
+
+
+// PREF: set DoH provider
+user_pref("network.trr.uri", "https://dns.dnswarden.com/00000000000000000000048"); // Hagezi Light + TIF
+
+
+// PREF: enforce DNS-over-HTTPS (DoH)
+user_pref("network.trr.mode", 3);
+
+
+// PREF: disable disk cache
+user_pref("browser.cache.disk.enable", false);
+
+
+// PREF: display the installation prompt for all extensions
+user_pref("extensions.postDownloadThirdPartyPrompt", false);
+
+
+// PREF: enforce certificate pinning
+// [ERROR] MOZILLA_PKIX_ERROR_KEY_PINNING_FAILURE
+// 1 = allow user MiTM (such as your antivirus) (default)
+// 2 = strict
+user_pref("security.cert_pinning.enforcement_level", 2);
+
+
+// PREF: delete all browsing data on shutdown except cookies
+user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.clearOnShutdown_v2.cache", true); // DEFAULT (clears cache)
+user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true); // DEFAULT (clears history and download history)
+
+// PREF: after crashes or restarts, do not save extra session data
+// such as form content, scrollbar positions, and POST data
+user_pref("browser.sessionstore.privacy_level", 2);
+
+
+// PREF: disable all DRM content (But can cause most popular streaming platforms from not functioning properly)
+user_pref("media.eme.enabled", false);
+
+
+/****************************************************************************
+ * START: MY OVERRIDES                                                      *
+****************************************************************************/
+// Find your Overrides online and customize your firefox (Some overrides will cause the browser or websites from functioning properly!)
+// Enter your personal overrides below this line:
+
 
 
 /****************************************************************************
