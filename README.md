@@ -7,7 +7,7 @@ This is about 31% faster than standard Firefox!
 
 1. Make an backup profile in about:profiles
 2. Download the user.js in releases
-3. Customize your user.js (Open user.js in a texteditor like notepad, and change the code in optinal setting, My Overrides and smooth scrolling! Open the Smooth scrolling.js to find the code for your monitor!)
+3. Customize your user.js (Open user.js in a texteditor like notepad, and change the code in optinal setting), To make your own overirdes scroll all the way to the bottom where it says "My overides" and paste it into there! To make changes to scrolling open the Smooth scrolling.js to find the code for your monitor!
 4. Open about:profiles and open your profile root directory and paste the user.js in there!
    
 *After restarting Firefox:*
